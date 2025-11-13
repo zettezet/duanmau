@@ -1,0 +1,59 @@
+body {
+  box-sizing: border-box;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.category-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.flash-sale {
+  animation: flash 2s infinite;
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    background-color: #ef4444;
+  }
+
+  50% {
+    background-color: #dc2626;
+  }
+}
+
+.cart-bounce {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.thumbnail:hover {
+  border-color: #3b82f6;
+}
+
+.main-image {
+  transition: all 0.3s ease;
+}
+
+.zoom-effect:hover .main-image {
+  transform: scale(1.05);
+}
